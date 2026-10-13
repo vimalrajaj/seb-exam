@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Coding Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f3f4f6; margin: 0; color: #111827; }
+    .card { max-width: 520px; margin: 60px auto; background: #fff; padding: 32px;
+            border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,.1); }
+    .btn { display: inline-block; background: #2563eb; color: #fff; padding: 14px 28px;
+           border-radius: 6px; text-decoration: none; font-size: 18px; margin: 16px 0; }
+    .note { font-size: 14px; color: #4b5563; text-align: left; }
+    #mobile { display: none; color: #b91c1c; font-weight: bold; }
+  </style>
+  <script>
+    var sebLink = "sebs://vimalraja.me/seb-exam/hackerrank_exam.seb";
+    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    window.onload = function () {
+      if (isMobile) {
+        document.getElementById("mobile").style.display = "block";
+        return;
+      }
+      setTimeout(function () { window.location.href = sebLink; }, 1000);
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>Online Coding Test</h2>
+    <p id="mobile">Mobile devices and tablets are not supported. Please use a Windows or macOS laptop/PC.</p>
+    <p>Safe Exam Browser should open automatically. If the browser asks permission, click <b>Open</b> or <b>Allow</b>.</p>
+    <a class="btn" href="sebs://vimalraja.me/seb-exam/hackerrank_exam.seb">Start Exam</a>
+    <div class="note">
+      <p><b>Before you start:</b></p>
+      <ul>
+        <li>Install Safe Exam Browser first:
+          <a href="https://safeexambrowser.org/download_en.html" target="_blank">download here</a></li>
+        <li>Use a Windows or macOS laptop/PC (no tablets or phones)</li>
+        <li>Close Zoom, Teams, Discord, and any screen recorders</li>
+        <li>Disconnect extra monitors and keep your charger plugged in</li>
+        <li>If the page shows "You're all set" after signup, click reload once</li>
+        <li>Click <b>Submit Test</b> before quitting Safe Exam Browser</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
